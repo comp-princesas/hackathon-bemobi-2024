@@ -16,24 +16,24 @@ class _CadastroState extends State<Cadastro> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text('Cadastro'),
+        title: const Text('Cadastro'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _buildInputField('Nome', 'Digite seu nome completo', Icons.person),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             _buildInputField('Email', 'Digite seu email', Icons.email),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             _buildInputField('Senha', 'Digite sua senha', Icons.lock, isPassword: true),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             _buildInputField('Celular', '(xx) xxxxx-xxxx', Icons.phone),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Row(
               children: [
                 Checkbox(
@@ -44,7 +44,7 @@ class _CadastroState extends State<Cadastro> {
                     });
                   },
                 ),
-                Expanded(
+                const Expanded(
                   child: Text(
                     'Concordo com os Termos de Uso do GemniA.',
                     style: TextStyle(fontSize: 14),
@@ -52,11 +52,11 @@ class _CadastroState extends State<Cadastro> {
                 ),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
-                padding: EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.symmetric(vertical: 16),
               ),
               onPressed: _agreedToTerms
                   ? () {
@@ -78,8 +78,8 @@ class _CadastroState extends State<Cadastro> {
         labelText: label,
         hintText: hint,
         prefixIcon: Icon(icon),
-        suffixIcon: isPassword ? Icon(Icons.visibility) : null,
-        border: OutlineInputBorder(),
+        suffixIcon: isPassword ? const Icon(Icons.visibility) : null,
+        border: const OutlineInputBorder(),
       ),
     );
   }
