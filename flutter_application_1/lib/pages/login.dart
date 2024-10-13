@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/cadastro.dart';
+import 'package:flutter_application_1/pages/request.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
+
+  @override
+    _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -72,10 +81,11 @@ class LoginPage extends StatelessWidget {
                 );
               },
               style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.blue, side: const BorderSide(color: Colors.blue),
+                foregroundColor: Colors.blue,
+                side: const BorderSide(color: Colors.blue),
                 padding: const EdgeInsets.symmetric(vertical: 16),
               ),
-              child:const Text('Cadastrar'),
+              child: const Text('Cadastrar'),
             ),
           ],
         ),
