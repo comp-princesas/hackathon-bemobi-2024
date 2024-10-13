@@ -37,11 +37,6 @@ Para executar o backend, execute o script `run.sh` no Linux/MacOS ou `run.bat` n
 ./run.sh
 ```
 
-#### Windows
-```bash
-run.bat
-```
-
 Este script configurará e iniciará o servidor Django.
 
 ### Frontend (Flutter)
