@@ -1,16 +1,5 @@
 # HACKATHON BEMOBI 2024 - COMPRINCESAS
 
-Tecnologias utilizadas:
-- Django (https://www.djangoproject.com/)
-- Flutter (https://flutter.dev/)
-- Android Studio (https://developer.android.com/?hl=pt-br)
-
-Para rodar o backend, basta rodar o script run.sh na pasta backend
-
-
-
-# Hackathon Bemobi 2024
-
 ## Estrutura do Projeto
 
 O projeto está organizado em duas partes principais:
@@ -23,8 +12,12 @@ Este projeto utiliza as seguintes tecnologias:
 
 - **Linguagens de Programação**: Python, Dart
 - **Frameworks**: Django, Flutter
-- **Banco de Dados**: PostgreSQL
+- **Banco de Dados**: SQLite
 - **Ferramentas de Desenvolvimento**: Git
+
+(https://www.djangoproject.com/)
+(https://flutter.dev/)
+(https://developer.android.com/?hl=pt-br)
 
 ## Como Executar o Projeto
 
